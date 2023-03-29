@@ -1,8 +1,8 @@
 .EXPORT_ALL_VARIABLES:
 DOCKER_SCAN_SUGGEST = false
-SRC_DIRS := . 
+SRC_DIRS := .
 CWD = $(shell pwd)
-IMG = github.com/ad/template-golang
+IMG = github.com/ad/petrovskoe
 TAG = latest
 GOCACHE ?= $$(pwd)/.go/cache
 VERSION = $(shell git describe --tags --always --abbrev=0 --match='v[0-9]*.[0-9]*.[0-9]*' 2> /dev/null | sed 's/^.//')
@@ -15,7 +15,7 @@ lint:
 		golangci/golangci-lint:v1.42.1 golangci-lint run -v
 
 test:
-	@-chmod +x ./test.sh 
+	@-chmod +x ./test.sh
 	@-docker run \
 		--rm -i \
 		-u $$(id -u):$$(id -g) \

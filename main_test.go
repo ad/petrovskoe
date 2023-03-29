@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ad/template-golang/app"
+	"github.com/ad/petrovskoe/app"
 )
 
 func TestMain(m *testing.M) {

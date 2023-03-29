@@ -1,3 +1,3 @@
-module github.com/ad/template-golang
+module github.com/ad/petrovskoe
 
-go 1.17
+go 1.20

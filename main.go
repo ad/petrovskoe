@@ -8,7 +8,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ad/template-golang/app"
+	"github.com/ad/petrovskoe/app"
 )
 
 var (
